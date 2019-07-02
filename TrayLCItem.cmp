@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="item" type="Account"/>
+    
+    <lightning:card >
+  
+    <p class="slds-p-horizontal--small slds-text-color_weak">
+        <lightning:formattedText value="{!v.item}"/>
+    </p>
+
+    </lightning:card>
+</aura:component>
