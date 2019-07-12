@@ -2,6 +2,9 @@
 
 Lightweight container that can be used to display external data within Salesforce...powered by the Tray.io Platform. This enables Salesforce users to display relevant external data effortlessly in their Salesforce instance without having to actively import the data into their CRM.
 
+![](tray_lc.gif)
+
+
 ## Steps
 
 ### Tray.io Configuration
