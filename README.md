@@ -11,5 +11,11 @@ Lightweight container that can be used to display external data within Salesforc
 
 ### Salesforce Configuration
 
-1. Go to Setup
-2. Search 'CORS' in the quick find search panel
+1. Whitelist Tray.io Workflow URL for cross-origin resource sharing (CORS).
+  - Go to Setup.
+  - Search 'CORS' in the quick find panel.
+  - Create 'New' Whitelisted Origin.
+  - Enter the Tray.io Webhook URL and save.
+2. Add Tray.io Workflow URL as a Content Security Policy Trusted Site.
+  - Go to Setup
+  - Search 'CSP Trusted Sites' 
