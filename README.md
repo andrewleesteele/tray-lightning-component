@@ -20,7 +20,7 @@ Lightweight container that can be used to display external data within Salesforc
    
 Example Workflow that imports Account data from Outreach
 
-![](tray_workflow.png)
+![](workflow.png | width=300 )
 
 
 ### Salesforce Configuration
