@@ -21,4 +21,19 @@ Lightweight container that can be used to display external data within Salesforc
    - Search 'CSP Trusted Sites' in the quick find panel.
    - Create 'New' Trusted Site.
    - Set 'Trusted Site URL' is set to Tray.io Webhook URL and active is set to true.
-3. 
+3. Add a a custom domain name to your Salesforce URL (required to use custom Lightning Components).
+   - Go to Setup.
+   - Search My Domain.
+   - Follow the instructions given and activate a custom domain.
+4. Add Lightning Component Code to Salesforce Environment
+   - Click the setup gear in top right and select 'Developer Console'.
+   - Create Lightning Component
+     - Select File>New>Lightning Component
+       - Name TrayLC
+       - Copy TrayLC.cmp into file.
+       - Click Controller, Helper, and Style on the right bundle panel and copy corresponding code into each file.
+     - Select File>New>Apex Class
+       - Copy TrayLCController.apcx into file.
+   - Save all files.
+5. Add Lightning Component to Page Layout.
+   - 
