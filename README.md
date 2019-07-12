@@ -17,6 +17,11 @@ Lightweight container that can be used to display external data within Salesforc
 5. Use a 'Trigger-Reply' Connector to send back to Salesforce with the following configuration.
    - Status: 200
    - Body: data: \[ \{data1: _ , data2: _ , data3: _ }, {data1: _ , data2: _ , data3: _ }, etc... \]
+   
+Example Workflow that imports Account data from Outreach
+
+![](tray_workflow.png)
+
 
 ### Salesforce Configuration
 
