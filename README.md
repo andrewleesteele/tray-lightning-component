@@ -1,6 +1,6 @@
 # tray-lightning-component
 
-Lightweight container that can be used to display external data within Salesforce...powered by the Tray.io Platform.
+Lightweight container that can be used to display external data within Salesforce...powered by the Tray.io Platform. This enables Salesforce users to display customer data effortlessly in their Salesforce instance without having to pollute their CRM data with extraneous data.
 
 ## Steps
 
@@ -13,7 +13,7 @@ Lightweight container that can be used to display external data within Salesforc
 4. Pull any relevant data with any supported Tray connector.
 5. Use a 'Trigger-Reply' Connector to send back to Salesforce with the following configuration.
    - Status: 200
-   - Body: data: \[ \{data1: _, data2: _, data3: _}\]
+   - Body: data: \[ \{data1: _ , data2: _ , data3: _ }, {data1: _ , data2: _ , data3: _ }, etc... \]
 
 ### Salesforce Configuration
 
