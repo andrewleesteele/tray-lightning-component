@@ -1,0 +1,7 @@
+public with sharing class TrayLCController{
+    @auraenabled
+    public static Lead getEmail (String recordId){
+        Lead lead = [SELECT email FROM Lead WHERE Id =: recordId][0];
+		return lead;
+    }  
+}

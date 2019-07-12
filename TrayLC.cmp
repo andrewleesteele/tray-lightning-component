@@ -5,7 +5,7 @@
         <aura:attribute name="items" type="Map[]"/>
         <aura:attribute name="page_number" type="Integer" default="1"/>
         <aura:attribute name="er" type="boolean" default="false"/>
-        <aura:attribute name="Account" type="Account"/>
+        <aura:attribute name="lead" type="Lead"/>
         <aura:attribute name="recordId" type="String" default=""/>
 
 <lightning:card iconName="standard:article" title="Tray.io SFDC Component" class="slds-text-heading_small">

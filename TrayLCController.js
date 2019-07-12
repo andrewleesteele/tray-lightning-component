@@ -1,27 +1,25 @@
 ({
     doInit : function(component, event, helper) {
-        /*
-        var action = component.get("c.getItems");
+
+        var action = component.get("c.getEmail");
         action.setParams({recordId : component.get("v.recordId")});
         action.setCallback(this, function(response){
             var state = response.getState();
            
-            if (component.isValid() && state === "SUCCESS") {
-                component.set("v.items", response.getReturnValue());    
+            if (component.isValid() && state === "SUCCESS") {   
+                component.set("v.lead", response.getReturnValue());    
             }
+            helper.thirdpartyClientCaller(component, event, helper); 
+
         });
-        console.log(component);
-        console.log(event);
-        
+
         $A.enqueueAction(action);
-        */
-        helper.thirdpartyClientCaller(component, event, helper); 
 
     },
-    stageChange : function(component, event) {
+    stageChange : function(component, event, helper) {
         console.log("numItems has changed");
 
-        doInit(component, event);
+        helper.thirdpartyClientCaller(component, event, helper); 
     },
     incrementPage : function(component, event, helper) {
         var new_page_number = component.get("v.page_number")+1;

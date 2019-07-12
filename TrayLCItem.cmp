@@ -1,11 +1,15 @@
-<aura:component >
-    <aura:attribute name="item" type="Account"/>
-    
-    <lightning:card >
-  
+<aura:component>
+    <aura:attribute name="item" type="Map"/>
+    <lightning:layout>
+        <lightning:layoutItem size="7" class="left-align">
+        <lightning:formattedText value="{!v.item.data1}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="4" class="right-align">
+        <lightning:formattedText value="{!v.item.data3}"/>
+        </lightning:layoutItem>
+    </lightning:layout> 
     <p class="slds-p-horizontal--small slds-text-color_weak">
-        <lightning:formattedText value="{!v.item}"/>
+    	<lightning:formattedText value="{!v.item.data2}"/>
     </p>
 
-    </lightning:card>
 </aura:component>
